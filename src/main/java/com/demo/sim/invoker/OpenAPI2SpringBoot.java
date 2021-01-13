@@ -12,7 +12,12 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.demo.sim.invoker", "com.demo.sim.api", "com.demo.sim.controller"})
+@ComponentScan(basePackages = {
+    "com.demo.sim.invoker",
+    "com.demo.sim.api",
+    "com.demo.sim.controller",
+    "org.openapitools.configuration"
+})
 public class OpenAPI2SpringBoot implements CommandLineRunner {
 
     @Override
